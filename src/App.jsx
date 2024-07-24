@@ -2,6 +2,8 @@ import { useState } from "react"
 import { DangerButton, MaxLabel, NaturalButton, SubmitButton } from "./components/ui"
 
 function App() {
+   // Declare a new state variable, which we'll call "counter"
+   //The useState hook is formed by one varible and a function
   const [counter, setCounter] = useState(0)
 
   const increaseByOne = () => { setCounter(counter + 1) }
@@ -12,7 +14,7 @@ function App() {
       <div className="flex justify-center items-center h-full w-full">
         <div className="flex-col">
           <MaxLabel>
-            {counter}
+            {counter} 
           </MaxLabel>
           <div className="grid md:grid-cols-3 mt-5 gap-4">
             <div>
